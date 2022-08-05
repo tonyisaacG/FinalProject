@@ -1,0 +1,302 @@
+<div class="container-fluid page">
+  <div class="d-flex page__box p-3 mt-2">Make Order</div>
+  <div class="page__content shadow p-3 position-relative">
+    
+     <!--  content -->
+
+
+<!-- الاطباق الرئيسيه -->
+<p>
+    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+      الاطباق الرئيسيه
+    </button>
+  </p>
+  <div >
+    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+      <div class="card card-body" >
+       
+        <ng-container >
+          <div class="row">
+              <div class="col col-12 col-md-6 col-lg-3" *ngFor="let item of products ; index as i">
+      
+                  <div class="card" style="width: 8rem;">
+                      <img [src]="item.imagurl" class="card-img-top" >
+                      <div class="card-body">
+                        <h5 class="card-title">{{item.name |titlecase}}</h5>
+                        <p class="card-text">{{item.price |currency}}</p>
+                        <button class="btn btn-primary"(click)="add(i)"  >Add to cart</button>
+                      </div>
+                    </div>
+              </div>
+          </div>
+        </ng-container> 
+  
+      </div>
+    </div>
+  </div>
+
+
+  <!-- الطواجن -->
+<p>
+  <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample1">
+      الطواجن
+  </button>
+</p>
+<div >
+  <div class="collapse collapse-horizontal" id="collapseWidthExample1">
+    <div class="card card-body" >
+     
+      <ng-container >
+        <div class="row">
+            <div class="col col-12 col-md-6 col-lg-3" *ngFor="let item of products ; index as i">
+    
+                <div class="card" style="width: 18rem;">
+                    <img [src]="item.imagurl" class="card-img-top" >
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.name |titlecase}}</h5>
+                      <p class="card-text">{{item.price |currency}}</p>
+                      <button class="btn btn-primary"(click)="add(i)"  >Add to cart</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </ng-container> 
+
+    </div>
+  </div>
+</div>
+
+
+<!-- بالكيلو  -->
+<p>
+  <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+    بالكيلو
+    </button>
+</p>
+<div >
+  <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+    <div class="card card-body" >
+     
+      <ng-container >
+        <div class="row">
+            <div class="col col-12 col-md-6 col-lg-3" *ngFor="let item of products ; index as i">
+    
+                <div class="card" style="width: 18rem;">
+                    <img [src]="item.imagurl" class="card-img-top" >
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.name |titlecase}}</h5>
+                      <p class="card-text">{{item.price |currency}}</p>
+                      <button class="btn btn-primary"(click)="add(i)"  >Add to cart</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </ng-container> 
+
+    </div>
+  </div>
+</div>
+
+
+<!-- السندوتشات-->
+<p>
+  <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample5" aria-expanded="false" aria-controls="collapseWidthExample5">
+    السندوتشات--
+  </button>
+</p>
+<div >
+  <div class="collapse collapse-horizontal" id="collapseWidthExample5">
+    <div class="card card-body" >
+     
+      <ng-container >
+        <div class="row">
+            <div class="col col-12 col-md-6 col-lg-3" *ngFor="let item of products ; index as i">
+    
+                <div class="card" style="width: 18rem;">
+                    <img [src]="item.imagurl" class="card-img-top" >
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.name |titlecase}}</h5>
+                      <p class="card-text">{{item.price |currency}}</p>
+                      <button class="btn btn-primary"(click)="add(i)"  >Add to cart</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </ng-container> 
+
+    </div>
+  </div>
+</div>
+
+
+<!-- الوجبات-->
+<p>
+  <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample3">
+   الوجبات
+  </button>
+</p>
+<div>
+  <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+    <div class="card card-body" >
+     
+      <ng-container >
+        <div class="row">
+            <div class="col col-12 col-md-6 col-lg-3" *ngFor="let item of products ; index as i">
+    
+                <div class="card" style="width: 18rem;">
+                    <img [src]="item.imagurl" class="card-img-top" >
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.name |titlecase}}</h5>
+                      <p class="card-text">{{item.price |currency}}</p>
+                      <button class="btn btn-primary"(click)="add(i)"  >Add to cart</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </ng-container> 
+
+    </div>
+  </div>
+</div>
+
+
+<!-- الشوريه-->
+<p>
+  <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample4" aria-expanded="false" aria-controls="collapseWidthExample4">
+    الشوربه
+  </button>
+</p>
+<div >
+  <div class="collapse collapse-horizontal" id="collapseWidthExample4">
+    <div class="card card-body" >
+     
+      <ng-container >
+        <div class="row">
+            <div class="col col-12 col-md-6 col-lg-3" *ngFor="let item of products ; index as i">
+    
+                <div class="card" style="width: 18rem;">
+                    <img [src]="item.imagurl" class="card-img-top" >
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.name |titlecase}}</h5>
+                      <p class="card-text">{{item.price |currency}}</p>
+                      <button class="btn btn-primary"(click)="add(i)"  >Add to cart</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </ng-container> 
+
+    </div>
+  </div>
+</div>
+
+
+<!-- المقبلات-->
+<p>
+  <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample6" aria-expanded="false" aria-controls="collapseWidthExample6">
+   المقبلات
+  </button>
+</p>
+<div >
+  <div class="collapse collapse-horizontal" id="collapseWidthExample6">
+    <div class="card card-body" >
+     
+      <ng-container >
+        <div class="row">
+            <div class="col col-12 col-md-6 col-lg-3" *ngFor="let item of products ; index as i">
+    
+                <div class="card" style="width: 18rem;">
+                    <img [src]="item.imagurl" class="card-img-top" >
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.name |titlecase}}</h5>
+                      <p class="card-text">{{item.price |currency}}</p>
+                      <button class="btn btn-primary"(click)="add(i)"  >Add to cart</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </ng-container> 
+
+    </div>
+  </div>
+</div>
+
+
+<!-- السلطات-->
+<p>
+  <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample7" aria-expanded="false" aria-controls="collapseWidthExample7">
+  السلطات
+  </button>
+</p>
+<div >
+  <div class="collapse collapse-horizontal" id="collapseWidthExample7">
+    <div class="card card-body" >
+     
+      <ng-container >
+        <div class="row">
+            <div class="col col-12 col-md-6 col-lg-3" *ngFor="let item of products ; index as i">
+    
+                <div class="card" style="width: 18rem;">
+                    <img [src]="item.imagurl" class="card-img-top" >
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.name |titlecase}}</h5>
+                      <p class="card-text">{{item.price |currency}}</p>
+                      <button class="btn btn-primary"(click)="add(i)"  >Add to cart</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </ng-container> 
+
+    </div>
+  </div>
+</div>
+
+<!-- Purchasing Card -->
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">اسم الصنف</th>
+      <th scope="col">الكميه</th>
+      <th scope="col">السعر</th>
+      <th scope="col"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">بلطى</th>
+      <td>2</td>
+      <td>33</td>
+      <td>
+        <button class="btn btn-danger">delet</button>
+      </td>
+      <tr>
+        <th scope="row">بلطى</th>
+        <td>2</td>
+        <td>33</td>
+        <td>
+          <button class="btn btn-danger">delet</button>
+        </td>
+        <tr>
+          <th scope="row">بلطى</th>
+          <td>2</td>
+          <td>33</td>
+          <td>
+            <button class="btn btn-danger">delet</button>
+          </td>
+   
+  </tbody>
+</table>
+<button class="btn btn-success">accept</button>
+<button class="btn btn-primary">print</button>
+<!-- Purchasing Card -->
+
+<!--  content -->
+    
+  </div>
+</div>
+
+
+

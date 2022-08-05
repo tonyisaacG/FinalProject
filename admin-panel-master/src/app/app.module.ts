@@ -14,6 +14,11 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { MakeordersComponent } from './makeorders/makeorders.component';
+import { ItemsComponent } from './items/items.component';
+
+import { UpdataitemComponent } from './updataitem/updataitem.component';
+
 
 @NgModule({
   declarations: [
@@ -22,6 +27,12 @@ import { MatListModule } from '@angular/material/list';
     HomeComponent,
     DashboardComponent,
     SidenavComponent,
+    MakeordersComponent,
+    ItemsComponent,
+ 
+    UpdataitemComponent,
+  
+    
   ],
   imports: [
     BrowserModule,

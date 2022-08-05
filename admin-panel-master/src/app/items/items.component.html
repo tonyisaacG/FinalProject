@@ -1,0 +1,108 @@
+
+<div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2">الاصناف</div>
+    <div class="page__content shadow p-3 position-relative">
+      
+       
+        <!-- content -->
+        <div class="container" style="text-align:center;">
+          <button type="button" class="btn btn-secondary btn-lg">الاطباق الرئيسيه</button> &nbsp;
+          <button type="button" class="btn btn-secondary btn-lg">طواجن</button> &nbsp;
+          <button type="button" class="btn btn-secondary btn-lg">بالكيلو</button > &nbsp;
+          <button type="button" class="btn btn-secondary btn-lg">السندوتشات</button> &nbsp;
+          <button type="button" class="btn btn-secondary btn-lg">الوجبات</button> &nbsp;
+          <button type="button" class="btn btn-secondary btn-lg">الشوربة</button> &nbsp;
+          <button type="button" class="btn btn-secondary btn-lg">السلطات</button> &nbsp;
+          <button type="button" class="btn btn-secondary btn-lg">المقبلات</button>  &nbsp; <br>
+          <div class="d-grid gap-5 col-2 " style="margin-left: 790px">
+           
+            <a routerLink="/additem" class=" btn btn-primary " type="button">
+             اضافة صنف
+            </a>
+           
+          </div>
+
+        </div>
+     
+        <div class="card card-body ms-2 me-2">
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th scope="col"></th>
+                      <th scope="col">صورة الصنف</th>
+                      <th scope="col">الملاحظات</th>
+                      <th scope="col">الكميه(كجم)</th>
+                      <th scope="col">سعر الصنف</th>
+                      <th scope="col">الاسم</th>
+                      <th scope="col">التسلسل</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <!--</tr> *ngFor="let employee of DetailsObject.employees;index as i"> -->
+                      <td scope="col" class="text-center">
+                        <a routerLink="/orderDetails" class=" btn btn-secondary " type="button">
+                          حذف
+                        </a>&nbsp;
+                        <a routerLink="/updateitem" class=" btn btn-secondary " type="button">
+                          تعديل
+                      </a>
+                    </td>
+                      <td scope="col" class="text-center">صورةف</td>
+                      <td scope="col" class="text-center">تمام</td>
+                      <td scope="col" class="text-center">2</td>
+                      <td scope="col" class="text-center">200</td>
+                      <td scope="col" class="text-center">بلطى</td>
+                      <td scope="col" class="text-center">1</td>
+                  </tr>
+
+                  <tr>
+                    <!--</tr> *ngFor="let employee of DetailsObject.employees;index as i"> -->
+                    <td scope="col" class="text-center">
+                      <a  class=" btn btn-secondary " type="button">
+                        حذف
+                      </a>&nbsp;
+                      <a routerLink="/updateitem" class=" btn btn-secondary " type="button">
+                        تعديل
+                    </a>
+                  </td>
+                    <td scope="col" class="text-center">صورةف</td>
+                    <td scope="col" class="text-center">تمام</td>
+                    <td scope="col" class="text-center">2</td>
+                    <td scope="col" class="text-center">200</td>
+                    <td scope="col" class="text-center">بلطى</td>
+                    <td scope="col" class="text-center">1</td>
+                </tr>
+
+                <tr>
+                  <!--</tr> *ngFor="let employee of DetailsObject.employees;index as i"> -->
+                  <td scope="col" class="text-center">
+                    <a routerLink="/orderDetails" class=" btn btn-secondary " type="button">
+                      حذف
+                    </a>&nbsp;
+                    <a routerLink="/updateitem" class=" btn btn-secondary " type="button">
+                      تعديل
+                  </a>
+                </td>
+                  <td scope="col" class="text-center">صورةف</td>
+                  <td scope="col" class="text-center">تمام</td>
+                  <td scope="col" class="text-center">2</td>
+                  <td scope="col" class="text-center">200</td>
+                  <td scope="col" class="text-center">بلطى</td>
+                  <td scope="col" class="text-center">1</td>
+              </tr>
+
+                  
+
+               
+                  
+              </tbody>
+          </table>
+      </div>
+        
+         <!-- content -->
+      </div>
+      
+    </div>
+ 
+  
