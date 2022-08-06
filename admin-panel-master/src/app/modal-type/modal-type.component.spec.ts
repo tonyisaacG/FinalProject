@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddNewItemComponent } from './add-new-item.component';
+import { ModalTypeComponent } from './modal-type.component';
 
-describe('AddNewItemComponent', () => {
-  let component: AddNewItemComponent;
-  let fixture: ComponentFixture<AddNewItemComponent>;
+describe('ModalTypeComponent', () => {
+  let component: ModalTypeComponent;
+  let fixture: ComponentFixture<ModalTypeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AddNewItemComponent ]
+      declarations: [ ModalTypeComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AddNewItemComponent);
+    fixture = TestBed.createComponent(ModalTypeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-items',
@@ -7,13 +6,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./items.component.scss']
 })
 export class ItemsComponent implements OnInit {
-  
-  constructor(private router:Router) { }
+
+  constructor() { }
 
   ngOnInit(): void {
-  }
-  AddItem(){
-    this.router.navigate(['/additem']);
   }
 
 }

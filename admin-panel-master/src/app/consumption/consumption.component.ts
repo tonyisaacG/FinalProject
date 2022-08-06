@@ -1,23 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { OrderesmodalComponent } from '../modals/orderesmodal/orderesmodal.component';
+import { ConsumptionmodalComponent } from '../modals/consumptionmodal/consumptionmodal.component';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-consumption',
+  templateUrl: './consumption.component.html',
+  styleUrls: ['./consumption.component.scss']
 })
-export class HomeComponent implements OnInit {
-
+export class ConsumptionComponent implements OnInit {
   dialogRef: MatDialogRef <any> ;
   constructor(public dialog: MatDialog) { }
 
  
 
   openDialog(): void {
-    this.dialogRef = this.dialog.open(OrderesmodalComponent, {
-      width: '60%',
-      height:'90%',
+    this.dialogRef = this.dialog.open(ConsumptionmodalComponent, {
+      width: '50%',
+      height:'80%',
       // data: { date: this.date,item:this.item,quantity:this.quantity,price:this.price},
     });
 

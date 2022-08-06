@@ -31,7 +31,7 @@
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": ["src/assets/popup.js"]
           },
           "configurations": {
             "production": {
@@ -127,8 +127,5 @@
       }
     }
   },
-  "defaultProject": "admin-panel-layout",
-  "cli": {
-    "analytics": "f061771a-b75d-4257-8293-aaa9434dd865"
-  }
+  "defaultProject": "admin-panel-layout"
 }
