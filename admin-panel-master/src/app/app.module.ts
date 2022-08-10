@@ -30,6 +30,12 @@ import { AddUserComponent } from './add-user/add-user.component';
 import { AddModalComponent } from './add-modal/add-modal.component';
 import { ConsumptionmodalComponent } from './modals/consumptionmodal/consumptionmodal.component';
 import { OrderesmodalComponent } from './modals/orderesmodal/orderesmodal.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { AboutComponent } from './about/about.component';
+import { CardsComponent } from './cards/cards.component';
+import { PannerComponent } from './panner/panner.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -47,6 +53,12 @@ import { OrderesmodalComponent } from './modals/orderesmodal/orderesmodal.compon
     AddModalComponent,
     ConsumptionmodalComponent,
     OrderesmodalComponent,
+    NavbarComponent,
+    LandingPageComponent,
+    AboutComponent,
+    CardsComponent,
+    PannerComponent,
+    FooterComponent,
     
   ],
   imports: [
